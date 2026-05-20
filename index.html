@@ -306,6 +306,12 @@ footer { background: var(--bark); padding: 44px 5%; }
   /* Wordmark -- shrink slightly but never hide */
   .wm-main { font-size: 16px; }
   .wm-sub { font-size: 16px; margin-left: 5px; }
+  nav { justify-content: flex-end; }
+  .nav-wordmark {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   /* Hero responsive tweaks: allow wrapping if necessary and scale down cleanly */
   .hero h1 { font-size: clamp(26px,8vw,40px); white-space: normal; line-height: 1.04; margin-bottom: 8px; }
@@ -326,9 +332,9 @@ footer { background: var(--bark); padding: 44px 5%; }
     z-index: 99;
   }
   .nav-links.open li { border-bottom: 1px solid rgba(255,255,255,.06); }
-  .nav-links.open li a { display: block; padding: 16px 5%; font-size: 15px; color: rgba(255,255,255,.75); letter-spacing: .06em; }
+  .nav-links.open li a { display: block; padding: 16px 5%; font-size: 15px; color: rgba(255,255,255,.75); letter-spacing: .06em; text-align: center; }
   .nav-links.open li:last-child { border-bottom: none; }
-  .nav-links.open .nav-phone { background: none !important; color: var(--gold) !important; padding: 16px 5%; font-weight: 600 !important; }
+  .nav-links.open .nav-phone { background: none !important; color: var(--gold) !important; padding: 16px 5% !important; font-weight: 600 !important; text-align: center; white-space: nowrap; }
 
   /* Hamburger icon */
   .hamburger { display: flex; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
