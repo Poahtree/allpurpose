@@ -109,25 +109,25 @@ nav {
   position: relative; z-index: 2;
   width: 100%;
   max-width: none;
-  padding: 80px 5%;
+  padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
   align-items: stretch;
   text-align: left;
-  height: 100%;
+  min-height: calc(100vh - 64px);
 }
 
-.hero-copy { display: flex; flex-direction: column; justify-content: center; gap: 0; }
+.hero-copy { display: flex; flex-direction: column; justify-content: center; gap: 0; padding: 80px 0 80px 5%; }
 
 .hero-media {
   width: 100%;
   height: 100%;
-  min-height: 420px;
   border-radius: 0;
   overflow: hidden;
   background: #111;
+  align-self: stretch;
 }
 .hero-media img {
   width: 100%;
@@ -425,7 +425,7 @@ footer { background: var(--bark); padding: 44px 5%; }
         </div>
       </div>
       <div class="hero-media">
-        <img src="https://plus.unsplash.com/premium_photo-1738779001491-1ed3a7e1affe?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A well-maintained backyard scene for pest control" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1696961582545-25ffb3e4ba85?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A well-maintained backyard scene for pest control" loading="lazy">
       </div>
     </div>
   </div>
